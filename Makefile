@@ -10,3 +10,6 @@ publish:
 link:
 	@npm link
 
+lint:
+	npx eslint .
+
