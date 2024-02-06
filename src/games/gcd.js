@@ -24,7 +24,7 @@ const generateRound = () => {
   const number1 = Math.floor(Math.random() * 100) + 1;
   const number2 = Math.floor(Math.random() * 100) + 1;
 
-  const question = `Question: ${number1} ${number2}`;
+  const question = `${number1} ${number2}`;
   const correctAnswer = findGCD(number1, number2);
 
   return { question, correctAnswer: String(correctAnswer) };

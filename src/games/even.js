@@ -10,7 +10,7 @@ const generateRound = () => {
     hasPrintedMessage = true;
   }
   const randomNumber = Math.floor(Math.random() * 100) + 1;
-  const question = `Question: ${randomNumber}`;
+  const question = `${randomNumber}`;
   const correctAnswer = isEven(randomNumber) ? 'yes' : 'no';
 
   return { question, correctAnswer };
