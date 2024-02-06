@@ -1,5 +1,4 @@
 // unified the logic for games index.js
-
 import readlineSync from 'readline-sync';
 
 const runGame = (game) => {
@@ -18,7 +17,7 @@ const runGame = (game) => {
     if (userAnswer === correctAnswer) {
       console.log('Correct!\n');
     } else {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
+      console.log(`'${userAnswer}' is the wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${name}!\n`);
       return;
     }
