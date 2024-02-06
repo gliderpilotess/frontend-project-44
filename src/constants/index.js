@@ -1,4 +1,4 @@
-// unified the logic for two games
+// unified the logic for games index.js
 
 import readlineSync from 'readline-sync';
 
