@@ -1,18 +1,24 @@
-// unified the logic for games index.js
 import readlineSync from 'readline-sync';
 
+const getUserName = () => readlineSync.question('May I have your name? ');
+const greetUser = (name) => console.log(`Hello, ${name}!\n`);
+
 const runGame = (game) => {
-  console.log('Welcome to the Brain Games!');
-  const name = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${name}!\n`);
+  const name = getUserName();
+  greetUser(name);
 
   const rounds = 3;
+  let hasPrintedMessage = false;
 
   for (let i = 0; i < rounds; i += 1) {
-    const { question, correctAnswer } = game.generateRound();
+    const { question, correctAnswer } = game(hasPrintedMessage);
 
     console.log(`Question: ${question}`);
-    const userAnswer = readlineSync.question('Your answer: ');
+    const userAnswer = readlineSync.question('Your answer: ').trim();
+
+    if (!hasPrintedMessage) {
+      hasPrintedMessage = true;
+    }
 
     if (userAnswer === correctAnswer) {
       console.log('Correct!\n');
