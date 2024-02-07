@@ -5,7 +5,7 @@ function welcomeUser() {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+  console.log('What number is missing in the progression?');
   return name;
 }
 
@@ -21,13 +21,7 @@ const getRandomArithmeticProgression = (length) => {
   return progression;
 };
 
-let hasPrintedMessage = false;
-
 const generateRound = () => {
-  if (!hasPrintedMessage) {
-    console.log('What number is missing in the progression?');
-    hasPrintedMessage = true;
-  }
   const progressionLength = Math.floor(Math.random() * 6) + 5;
   const progression = getRandomArithmeticProgression(progressionLength);
   const hiddenIndex = Math.floor(Math.random() * progression.length);
