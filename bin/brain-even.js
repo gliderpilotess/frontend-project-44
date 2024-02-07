@@ -3,6 +3,7 @@ import readlineSync from 'readline-sync';
 
 function welcomeUser() {
   console.log('Welcome to the Brain Games!');
+  console.log("Answer 'yes' if the number is even, otherwise answer 'no'.");
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
   return name;
@@ -17,7 +18,6 @@ function playGame(userName) {
 
   while (correctAnswersCount < 3) {
     const number = Math.floor(Math.random() * 100) + 1;
-    console.log("Answer 'yes' if the number is even, otherwise answer 'no'.");
     console.log(`Question: ${number}`);
     const userAnswer = readlineSync.question('Your answer: ').toLowerCase();
 
