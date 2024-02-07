@@ -52,13 +52,13 @@ const playGame = (userName) => {
       console.log('Correct!');
       correctAnswersCount += 1;
     } else {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
+      console.log(`'${userAnswer}' is the wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${userName}!`);
       return false;
     }
   }
 
-  console.log('Congratulations!');
+  console.log(`Congratulations, ${userName}!`);
   return true;
 };
 
