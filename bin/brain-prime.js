@@ -19,7 +19,7 @@ let hasPrintedMessage = false;
 
 const generateRound = () => {
   if (!hasPrintedMessage) {
-    console.log("'yes' if given number is prime. Otherwise answer 'no'.");
+    console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
     hasPrintedMessage = true;
   }
   const number = getRandomNumber(1, 100);
