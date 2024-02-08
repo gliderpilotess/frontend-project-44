@@ -6,7 +6,7 @@ let hasPrintedMessage = false;
 
 const generateRound = () => {
   if (!hasPrintedMessage) {
-    console.log('"yes" if the number is even, otherwise answer "no".');
+    console.log('"yes" if the number is even, otherwise answer "no"');
     hasPrintedMessage = true;
   }
   const randomNumber = Math.floor(Math.random() * 100) + 1;
