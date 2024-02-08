@@ -23,10 +23,10 @@ const runGame = (game) => {
     }
 
     if (userAnswer === correctAnswer) {
-      console.log('Correct!\n');
+      console.log('Correct!');
     } else {
       console.log(`'${userAnswer}' is the wrong answer ;(. Correct answer was '${correctAnswer}'.`);
-      console.log(`Let's try again, ${name}!\n`);
+      console.log(`Let's try again, ${name}!`);
       return;
     }
   }
