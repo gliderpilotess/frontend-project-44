@@ -52,7 +52,7 @@ const playGame = (userName) => {
     }
   }
 
-  console.log('Congratulations!');
+  console.log(`Congratulations, ${userName}!`);
   return true;
 };
 
