@@ -1,5 +1,3 @@
-// games brain-even
-
 const isEven = (num) => num % 2 === 0;
 
 let hasPrintedMessage = false;

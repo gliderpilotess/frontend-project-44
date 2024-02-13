@@ -1,4 +1,4 @@
-const getRandomNumber = () => Math.floor(Math.random() * 100);
+import getRandomNumber from '../utils.js';
 
 const getRandomOperator = () => {
   console.log('What is the result of the expression?');
@@ -16,6 +16,7 @@ const calculateExpression = (num1, operator, num2) => {
     case '*':
       return num1 * num2;
     default:
+      console.log(`Unexpected operator: ${operator}`);
       return NaN;
   }
 };
