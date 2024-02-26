@@ -11,12 +11,10 @@ const getRandomArithmeticProgression = (length) => {
 
   return progression;
 };
-let hasPrintedMessage = false;
 
-const generateRound = () => {
-  if (!hasPrintedMessage) {
+const generateRound = (message) => {
+  if (message) {
     console.log('What number is missing in the progression?');
-    hasPrintedMessage = true;
   }
   const progressionLength = Math.floor(Math.random() * 6) + 5;
   const progression = getRandomArithmeticProgression(progressionLength);

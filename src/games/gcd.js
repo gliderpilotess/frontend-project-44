@@ -1,7 +1,5 @@
 // finding the greatest common divisor game
 
-let hasPrintedMessage = false;
-
 const findGCD = (a, b) => {
   let num1 = a;
   let num2 = b;
@@ -15,10 +13,9 @@ const findGCD = (a, b) => {
   return num1;
 };
 
-const generateRound = () => {
-  if (!hasPrintedMessage) {
+const generateRound = (message) => {
+  if (message) {
     console.log('Find the greatest common divisor of given numbers.');
-    hasPrintedMessage = true;
   }
 
   const number1 = Math.floor(Math.random() * 100) + 1;

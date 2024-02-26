@@ -3,4 +3,4 @@
 import runGame from '../src/index.js';
 import gcdGame from '../src/games/gcd.js';
 
-runGame(gcdGame);
+runGame(gcdGame, true);

@@ -3,4 +3,4 @@
 import runGame from '../src/index.js';
 import progressionGame from '../src/games/prog.js';
 
-runGame(progressionGame);
+runGame(progressionGame, true);

@@ -1,11 +1,8 @@
 const isEven = (num) => num % 2 === 0;
 
-let hasPrintedMessage = false;
-
-const generateRound = () => {
-  if (!hasPrintedMessage) {
+const generateRound = (message) => {
+  if (message) {
     console.log('Answer "yes" if the number is even, otherwise answer "no".');
-    hasPrintedMessage = true;
   }
   const randomNumber = Math.floor(Math.random() * 100) + 1;
   const question = `${randomNumber}`;

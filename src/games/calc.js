@@ -16,8 +16,7 @@ const calculateExpression = (num1, operator, num2) => {
     case '*':
       return num1 * num2;
     default:
-      console.log(`Unexpected operator: ${operator}`);
-      return NaN;
+      throw new Error(`Unexpected operator: ${operator}`);
   }
 };
 
