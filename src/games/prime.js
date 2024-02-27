@@ -13,10 +13,7 @@ export const isPrime = (num) => {
 
 const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
 
-const generateRound = (message) => {
-  if (message) {
-    console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
-  }
+const generateRound = () => {
   const number = getRandomNumber(1, 100);
   const correctAnswer = isPrime(number) ? 'yes' : 'no';
   return { question: String(number), correctAnswer };

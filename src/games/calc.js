@@ -1,7 +1,6 @@
 import getRandomNumber from '../utils.js';
 
 const getRandomOperator = () => {
-  console.log('What is the result of the expression?');
   const operators = ['+', '-', '*'];
   const randomIndex = Math.floor(Math.random() * operators.length);
   return operators[randomIndex];

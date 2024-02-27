@@ -13,11 +13,7 @@ const findGCD = (a, b) => {
   return num1;
 };
 
-const generateRound = (message) => {
-  if (message) {
-    console.log('Find the greatest common divisor of given numbers.');
-  }
-
+const generateRound = () => {
   const number1 = Math.floor(Math.random() * 100) + 1;
   const number2 = Math.floor(Math.random() * 100) + 1;
 

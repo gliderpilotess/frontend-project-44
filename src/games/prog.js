@@ -12,10 +12,7 @@ const getRandomArithmeticProgression = (length) => {
   return progression;
 };
 
-const generateRound = (message) => {
-  if (message) {
-    console.log('What number is missing in the progression?');
-  }
+const generateRound = () => {
   const progressionLength = Math.floor(Math.random() * 6) + 5;
   const progression = getRandomArithmeticProgression(progressionLength);
   const hiddenIndex = Math.floor(Math.random() * progression.length);

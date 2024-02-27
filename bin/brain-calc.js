@@ -3,4 +3,6 @@
 import runGame from '../src/index.js';
 import calcGame from '../src/games/calc.js';
 
-runGame(calcGame);
+const description = 'What is the result of the expression?';
+
+runGame(calcGame, description);

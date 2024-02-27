@@ -3,4 +3,6 @@
 import runGame from '../src/index.js';
 import gcdGame from '../src/games/gcd.js';
 
-runGame(gcdGame, true);
+const description = 'Find the greatest common divisor of given numbers.';
+
+runGame(gcdGame, description);

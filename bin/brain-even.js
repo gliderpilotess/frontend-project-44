@@ -3,4 +3,6 @@
 import runGame from '../src/index.js';
 import evenGame from '../src/games/even.js';
 
-runGame(evenGame, true);
+const description = 'Answer "yes" if the number is even, otherwise answer "no".';
+
+runGame(evenGame, description);
